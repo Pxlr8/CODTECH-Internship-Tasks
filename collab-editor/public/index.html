@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Collaborative Document Editor</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="top-bar">
+
+            <h1>📝 Live Collaborative Editor</h1>
+
+            <div class="status">
+
+                <span id="users">0</span> Users Online
+
+            </div>
+
+        </div>
+
+        <div class="editor-info">
+
+            <input
+                type="text"
+                id="docTitle"
+                placeholder="Document Title"
+            >
+
+            <div class="stats">
+
+                <span id="words">0 Words</span>
+
+                <span id="chars">0 Characters</span>
+
+            </div>
+
+        </div>
+
+        <p id="typing"></p>
+
+        <textarea
+            id="editor"
+            placeholder="Start typing here..."
+        ></textarea>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Movie Recommender</title>
+
+<link rel="stylesheet" href="popup.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🎬 Movie Recommender</h1>
+
+    <p class="subtitle">
+        Discover amazing movies instantly
+    </p>
+
+    <select id="genre">
+
+        <option value="">Select Genre</option>
+
+        <option value="Action">Action</option>
+
+        <option value="Sci-Fi">Sci-Fi</option>
+
+        <option value="Horror">Horror</option>
+
+        <option value="Romance">Romance</option>
+
+    </select>
+
+    <button id="recommendBtn">
+        Get Recommendations
+    </button>
+
+    <div id="moviesContainer"></div>
+
+</div>
+
+<script src="movies.js"></script>
+
+<script src="popup.js"></script>
+
+</body>
+</html>
